@@ -1,16 +1,17 @@
-pipeline{
+pipeline {
     agent any
 
-    stages{
-        stage{'Git Checkout'}{
-            steps{
-                script{
+    stages {
+        stage('Git Checkout') {
+            steps {
+                script {
                     git branch: 'main', url: 'https://github.com/Gathungu/Java_App01.git'
                 }
             }
         }
     }
 }
+
 
 
 
